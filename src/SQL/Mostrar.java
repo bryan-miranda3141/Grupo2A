@@ -26,18 +26,18 @@ public class Mostrar extends javax.swing.JFrame {
   
         rsscalelabel.RSScaleLabel.setScaleLabel(jlHome, "src/images/home.png");
         jpHomeSelect.setVisible(false);
-      
+          Mostrar();
     }
     
     //Metodo para mostrar datos en la tabla
 
-    /*
+    
     private void Mostrar(){
         DefaultTableModel modelo = new DefaultTableModel();
         modelo.setColumnIdentifiers(new Object []{"nombre", "contraseña"});
         try{
             Statement statement = ConexionSQL.getConexion().createStatement();
-            String query = "SELECT * FROM tbUsuarios";
+            String query = "SELECT * FROM tbUsers";
             ResultSet rs = statement.executeQuery(query);
             
             while(rs.next()){
@@ -49,7 +49,7 @@ public class Mostrar extends javax.swing.JFrame {
             System.out.println(ex.toString());
         }
         
-    }*/
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
